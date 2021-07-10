@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- fontawesome icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- Bootstrap scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <title>shopR</title>
+
+</head>
+
+<body>
+
+
+<section id="title">
+    <div class="container-fluid" style="padding-bottom: 110px;">
+
+
+        <!-- Nav Bar -->
+
+        <nav class="navbar  navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="">shopr</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <form class="form-inline my-2 my-lg-0">
+                        <button style="margin-right:10px;" class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i> Shopping basket</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="">Login</a>
+
+                    </li> -->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Admin</a>
+                            <a class="dropdown-item" href="#">Client</a>
+                        </div>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+
+        </div>
+
+        <!-- Title -->
+        <div class="row">
+
+            <div class="col-lg-6">
+                <h1>Discover the newest and most liked games.</h1>
+                <a role="button" class="btn btn-outline-light btn-lg download-button" href="/getAllGames" style="color:white;">Go To Games</a>
+            </div>
+
+
+            <div class="col-lg-6">
+                <img class="title-image" src="../images/controller.png" alt="controller-img">
+            </div>
+        </div>
+
+</section>
+
+
+
+<section class="imagesGames" style="background-color:#fff;margin-top: 0px;">
+
+    <ul id="projects">
+
+        <li id="p1" class="flipper">
+            <div class="front"><img class="rdr2" src="https://www.rockstargames.com/reddeadredemption2/dist/img/global/social/ea95b42f4d8029ac2510571cc8dbdae4.jpg" alt="">
+            </div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">Red Dead Redemption 2</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Rockstar_Games">RockStar Studio</a></p>
+                <p>A 2018 action-adventure game developed and published by Rockstar Games.<br />
+                    The story is set in 1899 in a fictionalized representation of the Western, Midwestern, and Southern United States.</p>
+
+            </div>
+        </li>
+
+        <li id="p2" class="flipper">
+            <div class="front"><img class="rdr2" src="https://cdnb.artstation.com/p/assets/images/images/025/990/875/large/litos-lopez-death-strandingwallpaper3.jpg?1587555481" alt="">
+            </div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">Death Stranding</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Kojima_Productions">Kojima Productions</a></p>
+                <p>an action game developed by Kojima Productions. It is the first game from director Hideo Kojima and Kojima Productions after their split from Konami in 2015.</p>
+                <p>
+                    <br />
+                </p>
+
+            </div>
+        </li>
+        <li id="p3" class="flipper">
+            <div class="front"><img class="rdr2" src="https://image.api.playstation.com/vulcan/ap/rnd/202009/2310/Xd3FiazVhAP0kbx20yLqFg2E.jpg" alt=""></div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">No Man's Sky</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Hello_Games">Hello Games</a></p>
+                <p>a survival game that is built around: exploration, survival, combat, and trading.
+                    Players are free to perform within a generated deterministic open world universe, which includes over 18 quintillion planets.</p>
+            </div>
+        </li>
+
+    </ul>
+    </div>
+
+</section>
+
+
+<section id="Book-Section">
+
+    <div class="container-book">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <img class="book-image" src="../images/book1.png" alt="book-img">
+            </div>
+            <div class="col-lg-6">
+
+                <h1 class="h1-book">From the classics<br />to design books, <br />shopr has a lot<br /> to offer.</h1>
+                <a role="button" class="btn btn-outline-light btn-lg download-button" href="@{/manageBooks}" style="color:white;">Go To Books</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="imagesGames" style="background-color:#fff;margin-top: 0px;">
+
+    <ul id="projects" style="padding-left: 110px;">
+
+        <li id="p1" class="flipper" style="width: 445.5px;height: 607.5px;">
+            <div class="front"><img class="book-cover" src="../images/book2.jpg" alt="">
+            </div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">Adventures of Huckleberry Finn</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Mark_Twain">Mark Twain</a></p>
+                <p>The book is noted for its colorful description of people and places along the Mississippi River. <br />Set in a Southern antebellum society that had
+                    ceased to exist over 20 years before the work was published,<br /> Adventures of Huckleberry Finn is an often scathing satire on entrenched attitudes, particularly racism.</p>
+
+            </div>
+        </li>
+
+        <li id="p2" class="flipper" style="width: 445.5px;height: 607.5px;">
+            <div class="front"><img class="book-cover" src="../images/book3.png" alt="">
+            </div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">Musica Rock da Vittula</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Mikael_Niemi">Mikael Niemi</a></p>
+                <p>It is the end of the seventies, when the streets of Pajala, a small town in Tornedalen, <br />
+                    in the far north of Sweden, are paved. Along with the asphalt comes a much more disruptive and dangerous novelty: pop music.</p>
+
+            </div>
+        </li>
+        <li id="p3" class="flipper" style="width: 445.5px;height: 607.5px;">
+            <div class="front"><img class="book-cover" src="../images/book4.jpg" alt=""></div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">Dracula</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Hello_Games">Bram Stoker</a></p>
+                <p>Dracula is a Gothic horror novel by Bram Stoker, published in 1897. As an epistolary novel, the narrative is related through letters,<br />
+                    diary entries, and newspaper articles. It has no single protagonist, but opens with solicitor Jonathan Harker taking a business trip to <br />
+                    stay at the castle of a Transylvanian noble, Count Dracula.</p>
+            </div>
+        </li>
+
+    </ul>
+    </div>
+
+
+</section>
+
+
+
+<section id="Book-Section">
+
+    <div class="container-book" style="padding-top:0;">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <h1 class="h1-book" style="margin-left: 259.489px;">Exclusive Signed Records, Coloured Vinyl Editions and more</h1>
+                <a role="button" class="btn btn-outline-light btn-lg download-button" href="/getAllLps" style="color:white;margin-left: 259.489px;">Go to LP records</a>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <img class="vinyl-image" src="../images/vinyl1.png" alt="vinyl-img">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="imagesGames" style="background-color:#fff;margin-top: 0px;">
+
+
+        <ul id="projects" style="padding-left: 110px;">
+
+        <li id="p1" class="flipper" style="  width: 440px;height: 440px;">
+            <div class="front"><img class="lp-cover" src="https://musiceureka.files.wordpress.com/2017/11/folder.jpg?w=505&h=505" alt="">
+            </div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">Adventures of notes</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Mark_Twain">mark Twain</a></p>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+
+            </div>
+        </li>
+
+        <li id="p2" class="flipper" style="  width: 440px;height: 440px;">
+            <div class="front"><img class="lp-cover" src="http://albumcovers.koldobarroso.com/wp-content/uploads/2017/11/jazz-in-da-house-koldo-barroso-album-cover-web-1000.jpg" alt="">
+            </div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">Jazz Session</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Mikael_Niemi">Michael showman</a></p>
+                <p>making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, <br />
+                    looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum</p>
+
+            </div>
+        </li>
+        <li id="p3" class="flipper" style="  width: 440px;height: 440px;">
+                <div class="front"><img class="lp-cover" src="https://media.s-bol.com/qxxLJjXXkMm2/550x550.jpg" alt=""></div>
+            <div class="back" style="margin-left: 50px;">
+                <h3 style="color:#DA7F8F;">Altin gun</h3>
+                <p class="author">by <a class="aImages" href="https://en.wikipedia.org/wiki/Hello_Games">altin gun</a></p>
+                <p>45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. <br />
+                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", </p>
+            </div>
+        </li>
+
+    </ul>
+    </div>
+
+
+</section>
+
+<script type="text/javascript">
+    $('#projects > li').hover(function() {
+        $(this).siblings().addClass('blur');
+    }, function() {
+        $(this).removeClass('clicked').siblings().removeClass('blur');
+
+    });
+
+    $('#projects > li').click(function(e) {
+        $(this).addClass('clicked');
+    });
+</script>
+</body>
+
+</html>

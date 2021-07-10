@@ -1,0 +1,337 @@
+body{
+    font-family: 'Montserrat ', sans-serif;
+}
+
+
+#title{
+    background-color: #FF616D;  /* #ff4c68;      /*use # for id instead od . for class*/
+    color: #fff;
+
+}
+h1 {
+    font-family: 'Montserrat ', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+.BookManagmentBackground{
+    background-color: #FF616D;
+    padding: 3% 15%;
+    text-align: center;
+
+}
+.h1BookManagmentBackground{
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    text-align: center;
+
+}
+.h2BookManagmentBackground{
+    padding-bottom: 50px;
+
+}
+.FormBookManagmentBackground{
+    padding-left: 500px;
+}
+
+.LinkBookManagmentBackground{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 50px;
+    padding-left: 15px;
+}
+.LinkBookManagmentBackground:hover{
+    color: lightslategrey;
+    text-decoration: none;
+
+
+
+}
+.table-book{
+    padding-top: 80px;
+}
+.table-book-html{
+    padding-top: 0;
+}
+td{
+    font-family: 'Ubuntu', sans-serif;
+    color: #3A6351;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+tr{
+    font-family: 'Ubuntu', sans-serif;
+    color: #444444;
+}
+p{
+    font-family: 'Montserrat ', sans-serif;
+    color: #DA7F8F;
+    line-height: 1.7;
+
+}
+.container-fluid{
+    padding: 3% 15%;
+
+}
+/* Navigation Brand */
+
+.navbar{
+
+    padding: 0 0 4.5rem;
+
+}
+.navbar-brand{
+    font-family: 'ubuntu',sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+}
+/* Download buttons */
+
+
+
+/* Title Image */
+.title-image{
+    width: 125%;
+    transform: rotate(-34deg);
+    position: absolute;
+    right: -40px;
+    top: -20px;
+
+}
+
+.imagesGames{
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+/* Book Section */
+
+
+#book-section{
+    background-color: #FF616D;  /* #ff4c68;      /*use # for id instead od . for class*/
+}
+
+.container-book{
+    background: #FF616D;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.h1-book{
+    color: white;
+    padding-top: 150px;
+
+}
+.h1-book-html{
+    padding-left: 40px;
+    padding-top: 140px;
+}
+.book-image{
+    width: 498.040px;
+    height: 700px;
+    margin-left:259.489px;
+
+}
+.vinyl-image{
+    width: 100%;
+    right:150px;
+    padding-top: 210px;
+    position: absolute;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ff4c68;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.aImages:hover {
+    text-decoration: none;
+    color: #205F82;
+}
+
+.aImages:link,a:visited {
+    color: #4083A9;
+    outline: none;
+    text-decoration: none;
+}
+
+.author {
+    font-size: 13px;
+    margin: 5px 0 25px;
+}
+
+.date {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*foto's home*/
+#projects {
+    width: 1200px;
+    margin: 0 auto 30px;
+    perspective: 1000;
+    width: 90%;
+    padding-left: 55px;
+}
+#projects .flipper {
+    width: 480px;
+    height: 270px;
+    display: inline-block;
+    background-color: #FAF3F3;
+
+    -webkit-transform: scale(0.90);
+    -moz-transform: scale(0.90);
+    -o-transform: scale(0.90);
+    -ms-transform: scale(0.90);
+    transform: scale(0.90);
+
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+#projects .flipper:hover {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+
+    -webkit-box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+#projects .flipper.blur {
+    -webkit-filter: blur(3px);
+
+    -webkit-transform: scale(0.88);
+    -moz-transform: scale(0.88);
+    -o-transform: scale(0.88);
+    -ms-transform: scale(0.88);
+    transform: scale(0.88);
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+#projects .flipper.rotate {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#projects:hover .clicked {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.front,.back {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    width: 360px;
+    height: 260px;
+    padding: 20px;
+    z-index: 1;
+
+}
+.rdr2{
+    width: 480px;
+    height: 270px;
+
+}
+.book-cover{
+    width: 445.5px;
+    height: 607.5px;
+}
+.lp-cover{
+    width: 440px;
+    height: 440px;
+}
